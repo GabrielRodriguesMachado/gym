@@ -42,7 +42,7 @@ function App() {
           className="py-2 px-4 shadow-md no-underline rounded-full bg-blue-600 text-white font-sans font-semibold text-sm border-blue btn-primary hover:text-white hover:bg-blue-light focus:outline-none active:shadow-none mr-2"
         >Treino C</button>
       </div>) : (
-        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-black">
+        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-black min-w-full">
           <p>{treino}</p>
             {treinoEscolhido.map((treino) => (
           <div key={treino.id} className="px-6 py-4">
