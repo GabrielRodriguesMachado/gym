@@ -24,29 +24,36 @@ function App() {
     setTreinoSelecionado(false);
   }
   return (
-    <div>
+    <div className="">
       <h1>Escolha o treino</h1>
       {
         treinoSelecionado ? (
-      <div>
-        <button onClick={handleTreinoA}>Treino A</button>
-        <button onClick={handleTreinoB}>Treino B</button>
-        <button onClick={handleTreinoC}>Treino C</button>
+      <div className="justify-center my-8 select-none flex">
+        <button
+          onClick={handleTreinoA}
+          className="py-2 px-4 shadow-md no-underline rounded-full bg-blue-600 text-white font-sans font-semibold text-sm border-blue btn-primary hover:text-white hover:bg-blue-light focus:outline-none active:shadow-none mr-2"
+        >Treino A</button>
+        <button
+          onClick={handleTreinoB}
+          className="py-2 px-4 shadow-md no-underline rounded-full bg-blue-600 text-white font-sans font-semibold text-sm border-blue btn-primary hover:text-white hover:bg-blue-light focus:outline-none active:shadow-none mr-2"
+        >Treino B</button>
+        <button
+          onClick={handleTreinoC}
+          className="py-2 px-4 shadow-md no-underline rounded-full bg-blue-600 text-white font-sans font-semibold text-sm border-blue btn-primary hover:text-white hover:bg-blue-light focus:outline-none active:shadow-none mr-2"
+        >Treino C</button>
       </div>) : (
-        <div>
+        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-black">
           <p>{treino}</p>
-          <ul>
             {treinoEscolhido.map((treino) => (
-              <li key={treino.id}>
-                <p>{treino.nome}</p>
-                <p>Séries: {treino.series}</p>
-                <p>Repetições {treino.repeticoes}</p>
-                <p>Carga: {treino.carga}kg</p>
-                <p>Realizado?</p>
-                <input type="checkbox" name="" id="" />
-              </li>
+          <div key={treino.id} className="px-6 py-4">
+            <p className="font-bold text-xl mb-2 text-gray-200">{treino.nome}</p>
+            <p className="text-gray-200 text-base">Séries: {treino.series}</p>
+            <p className="text-gray-200 text-base">Repetições {treino.repeticoes}</p>
+            <p className="text-gray-200 text-base">Carga: {treino.carga}kg</p>
+            <p className="text-gray-200 text-base">Realizado?</p>
+            <input type="checkbox" name="" id="" className="text-gray-700 text-base" />
+          </div>
             ))}
-          </ul>
         </div>
       )
       }
