@@ -36,21 +36,21 @@ function App() {
       <h1>Escolha o treino</h1>
       {
         treinoSelecionado ? (
-      <div className="justify-center my-8 select-none flex">
+      <div className="justify-center my-8 select-none flex bg-black min-w-full min-h-screen">
         <button
           onClick={handleTreinoA}
-          className="py-2 px-4 shadow-md no-underline rounded-full bg-blue-600 text-white font-sans font-semibold text-sm border-blue btn-primary hover:text-white hover:bg-blue-light focus:outline-none active:shadow-none mr-2"
+          className="py-2 px-4 max-h-12 shadow-md no-underline rounded-full bg-blue-600 text-white font-sans font-semibold text-sm border-blue btn-primary hover:text-white hover:bg-blue-light focus:outline-none active:shadow-none mr-2"
         >Treino A</button>
         <button
           onClick={handleTreinoB}
-          className="py-2 px-4 shadow-md no-underline rounded-full bg-blue-600 text-white font-sans font-semibold text-sm border-blue btn-primary hover:text-white hover:bg-blue-light focus:outline-none active:shadow-none mr-2"
+          className="py-2 px-4 max-h-12 shadow-md no-underline rounded-full bg-blue-600 text-white font-sans font-semibold text-sm border-blue btn-primary hover:text-white hover:bg-blue-light focus:outline-none active:shadow-none mr-2"
         >Treino B</button>
         <button
           onClick={handleTreinoC}
-          className="py-2 px-4 shadow-md no-underline rounded-full bg-blue-600 text-white font-sans font-semibold text-sm border-blue btn-primary hover:text-white hover:bg-blue-light focus:outline-none active:shadow-none mr-2"
+          className="py-2 px-4 max-h-12 shadow-md no-underline rounded-full bg-blue-600 text-white font-sans font-semibold text-sm border-blue btn-primary hover:text-white hover:bg-blue-light focus:outline-none active:shadow-none mr-2"
         >Treino C</button>
       </div>) : (
-        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-black min-w-full">
+        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-black min-w-full min-h-screen">
           <p>{treino}</p>
             {treinoEscolhido.map((treino) => (
           <div key={treino.id} className="px-6 py-4">
