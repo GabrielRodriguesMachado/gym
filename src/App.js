@@ -52,6 +52,7 @@ function App() {
             <p className="text-gray-200 text-base">Carga: {treino.carga}kg</p>
             <p className="text-gray-200 text-base">Realizado?</p>
             <input type="checkbox" name="" id="" className="text-gray-700 text-base" />
+          <hr />
           </div>
             ))}
         </div>
