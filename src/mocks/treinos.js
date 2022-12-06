@@ -126,35 +126,35 @@ export const treinoB = [
     nome: 'Extensor',
     series: 3,
     repeticoes: 15,
-    carga: '?',
+    carga: 25,
   },
   {
     id: 7,
     nome: 'Hack',
     series: 3,
     repeticoes: 12,
-    carga: '?',
+    carga: 20,
   },
   {
     id: 8,
     nome: 'Flexor Sentado',
     series: 3,
     repeticoes: 15,
-    carga: '?',
+    carga: 30,
   },
   {
     id: 9,
     nome: 'Abdutor',
     series: 3,
     repeticoes: 15,
-    carga: '?',
+    carga: 20,
   },
   {
     id: 10,
     nome: 'Panturrilha Leg 180',
     series: 4,
     repeticoes: 15,
-    carga: '?',
+    carga: 35,
   }
 ]
 
