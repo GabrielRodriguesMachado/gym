@@ -23,6 +23,14 @@ function App() {
     setTreinoEscolhido(treinoC);
     setTreinoSelecionado(false);
   }
+
+  function handleRealizado(id) {
+    const treinoAtualizado = treinoEscolhido.reduce((acc, treino) => {
+      if (treino.id !== id) return [...acc, treino];
+      return acc;
+    }, []) 
+    setTreinoEscolhido(treinoAtualizado);
+  }
   return (
     <div className="">
       <h1>Escolha o treino</h1>
@@ -50,8 +58,12 @@ function App() {
             <p className="text-gray-200 text-base">Séries: {treino.series}</p>
             <p className="text-gray-200 text-base">Repetições {treino.repeticoes}</p>
             <p className="text-gray-200 text-base">Carga: {treino.carga}kg</p>
-            <p className="text-gray-200 text-base">Realizado?</p>
-            <input type="checkbox" name="" id="" className="text-gray-700 text-base" />
+            {/* <p className="text-gray-200 text-base">Realizado?</p>
+            <input type="checkbox" name="" id="" className="text-gray-700 text-base" /> */}
+            <button
+              className="py-2 px-4 shadow-md no-underline rounded-full bg-blue-600 text-white font-sans font-semibold text-sm border-blue btn-primary hover:text-white hover:bg-blue-light focus:outline-none active:shadow-none mr-2"
+              onClick={() => handleRealizado(treino.id)}
+            >Realizado</button>
           <hr />
           </div>
             ))}
