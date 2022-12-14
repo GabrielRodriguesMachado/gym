@@ -32,14 +32,14 @@ export const treinoA = [
     nome: 'Supino Reto com Alteres',
     series: 3,
     repeticoes: 12,
-    carga: 6,
+    carga: 7,
   },
   {
     id: 6,
     nome: 'Crucifixo Inclinado',
     series: 3,
     repeticoes: 15,
-    carga: 4,
+    carga: 5,
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ export const treinoA = [
     nome: 'Triceps Polia Barra',
     series: 3,
     repeticoes: 15,
-    carga: '?',
+    carga: 20,
   },
   {
     id: 10,
